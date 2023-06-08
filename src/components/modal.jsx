@@ -34,11 +34,11 @@ const Modal = ({ xButton=false, title=false, submitButton, onClose, onSubmit, ch
   const titleStyle = {
     margin: '0',
     marginBottom: '20px',
-    color: 'pink'
+    color: 'rgb(25,74,107)'
   };
 
   const buttonStyle = {
-    backgroundColor: '#007bff',
+    backgroundColor: 'rgb(63,120,167)',
     color: '#fff',
     padding: '10px 20px',
     border: 'none',
