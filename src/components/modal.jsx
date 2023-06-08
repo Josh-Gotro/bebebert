@@ -47,6 +47,11 @@ const Modal = ({ xButton=false, title=false, submitButton, onClose, onSubmit, ch
     marginRight: '10px',
   };
 
+  const buttonStyle2 = {
+    ... buttonStyle,
+    backgroundColor: 'rgb(186,20,26)'
+  }
+
   return (
     <>
       <div style={overlayStyle} onClick={onClose} />
@@ -56,7 +61,7 @@ const Modal = ({ xButton=false, title=false, submitButton, onClose, onSubmit, ch
         <div>{children}</div>
         <div style={{ textAlign: 'center', marginTop: '20px' }}>
           {submitButton && <button style={buttonStyle} onClick={onSubmit}>Submit</button>}
-          <button style={buttonStyle} onClick={onClose}>Cancel</button>
+          <button style={buttonStyle2} onClick={onClose}>Cancel</button>
         </div>
       </div>
     </>
